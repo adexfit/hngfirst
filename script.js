@@ -1,15 +1,17 @@
 
 const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const d = new Date();
-let day = weekday[d.getDay()];
+const day = weekday[d.getDay()];
 
 document.getElementById("insertDay").innerHTML = day;
 
 
 function updateTime(){
-    let milliSec = d.getTime();
-    const stringTime = String(milliSec)
-    document.getElementById("insertUTC").innerHTML = stringTime;
+    const currentTimeValue = document.getElementById('insertUTC');
+    const current_time = new Date();
+    const current_time_millie = current_time.getTime();
+    const milliseconds = String(current_time_millie)
+    currentTimeValue.textContent = milliseconds;
 
 }
 
