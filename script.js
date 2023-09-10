@@ -7,11 +7,11 @@ document.getElementById("insertDay").innerHTML = day;
 
 
 function updateTime(){
-    const currentTimeValue = document.getElementById('insertUTC');
-    const current_time = new Date();
-    const current_time_millie = current_time.getTime();
-    const milliseconds = String(current_time_millie)
-    currentTimeValue.textContent = milliseconds;
+    const currentTimeV = document.getElementById('insertUTC');
+    const currentTime = new Date();
+    const currentTiMillie = currentTime.getTime();
+    const milliseconds = String(currentTiMillie)
+    currentTimeV.textContent = milliseconds;
 
 }
 
