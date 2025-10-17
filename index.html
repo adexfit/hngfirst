@@ -1,23 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HNG project 1</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <main class="mainCard" data-testid="test-profile-card">
+      <h1>Profile Card</h1>
+      <div class="content">
+          <div class="imgD">
+            <figure><img src="https://avatars.githubusercontent.com/u/68389567?v=4" alt="my-pic" data-testid="test-user-avatar"/></figure>
+            <nav class="socials" data-testid="test-user-social-links">
+              <a href="https://www.linkedin.com/in/elishaadeboye/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square" style="font-size: 32px;" data-testid="test-user-social-linkedin"></i></a>
+              <a href="https://github.com/adexfit/" data-testid="test-user-social-github" target="_blank" rel="noopener noreferrer"><i class="	fa fa-github" style="font-size: 32px;"></i></a>
+            </nav>
+          </div>     
+          <div class="list"> 
+            <ul class="">
+              <li data-testid="test-user-name"><span>Full Name</span>: Adeboye Elisha Owoyemi</li>
+              <li><span>Job title</span>: Software Engineer</li>
+              <p data-testid="test-user-bio">
+              <span>Short Bio</span>: I am a dedicated and passionate software engineer with
+                minimal experience in developing innovative web applications. I hold a
+                Bachelor’s degree in Physiotherapy from the University of Ibadan. In
+                my leisure time, I love contributing to open-source projects. I am
+                committed to continuous learning and staying updated with the latest
+                industry trends. Feel free to connect with me on social media.
+              </p>
+              <li><span>Current Location</span>: Owo, Nigeria</li>
+              <li data-testid="test-user-hobbies"><span>Hobbies</span>: Singing, Reading</li>
+               <li data-testid="test-user-dislikes"><span>Dislikes</span>: Hatred, Lies</li>
+              <li>
+              <span> Email</span>: <a href="mailto:y.adeboye@gmail.com">y.adeboye@gmail.com</a>
+              </li>
+              <li><span>Current time (UTC)</span>: <span id="clock" data-testid="test-user-time"></span></li>
+            </ul>
+          </div>
+      </div>
+       <br/>
 
-<body>
-    <div class="card">
-        <p data-testid="slackUserName">newTechAdexJS</p>
-        <img src="./techadex.jpg" data-testid="slackDisplayImage" alt="newTechAdexJS"  class="pic"><br>
-        <p data-testid="currentDayOfTheWeek" id="insertDay"></p>
-        <p data-testid="currentUTCTime" id="insertUTC"></p>
-        <p data-testid="myTrack">Frontend</p><br>
-        <a href="https://github.com/adexfit/hngfirst.git" data-testid="githubURL">githuburl</a>
-    </div>
-</body>
 
-    <script src="script.js"></script>
+      </ul>
+    </main>
+    <script src="main.js">
+    </script>
+  </body>
 </html>
