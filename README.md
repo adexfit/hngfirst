@@ -9,4 +9,5 @@
 
 ## hosted link
 
-[live link](https://codepen.io/realAdexfit/full/yLvbBev)
+[github pages](https://adexfit.github.io/hngfirst/)
+[code pen](https://codepen.io/realAdexfit/full/yLvbBev)
