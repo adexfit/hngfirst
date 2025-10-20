@@ -19,8 +19,25 @@ form.addEventListener("submit", (e) => {
     }
   };
 
+  const showSuccess = () => {
+    const successMsg = document.getElementById("success");
+    if (valid) {
+      successMsg.style.display = "block";
+      successMsg.textContent = "Form submitted successfully!";
+    } else {
+      successMsg.style.display = "none";
+    }
+
+    setTimeout(() => {
+      successMsg.style.display = "none";
+    }, 3000);
+  };
+
   const name = form.name.value.trim();
-  showError("name", !name ? "Name is required." : "");
+  showError("name", !name ? "Full name is required." : "");
+
+  const subject = form.subject.value.trim();
+  showError("subject", !subject ? "Subject is required." : "");
 
   const email = form.email.value.trim();
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -44,7 +61,13 @@ form.addEventListener("submit", (e) => {
   );
 
   if (valid) {
-    alert("Form submitted successfully!");
+    showSuccess();
+    // alert("Form submitted successfully!");
     form.reset();
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   }
 });

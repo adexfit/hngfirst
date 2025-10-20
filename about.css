@@ -1,0 +1,9 @@
+.myHighlight {
+  color: rgb(32, 156, 129);
+  font-weight: bold;
+}
+
+ul {
+  padding-left: 20px;
+  list-style-type: circle;
+}

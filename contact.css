@@ -14,13 +14,13 @@ h2 {
 }
 
 .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 label {
   display: block;
-  margin-bottom: 0.4rem;
-  font-weight: bold;
+  /* margin-bottom: 0.2rem; */
+  font-weight: medium;
 }
 
 input,
@@ -46,6 +46,18 @@ textarea:focus {
   margin-top: 0.3rem;
   display: none;
 }
+#success {
+  color: #ffffff;
+  font-size: 0.9rem;
+  /* margin-top: 0.3rem; */
+  display: none;
+}
+
+#success-group {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #09b17f;
+}
 
 .error input,
 .error textarea {
@@ -58,7 +70,7 @@ button {
   font-weight: bold;
   border: none;
   cursor: pointer;
-  margin-top: 1rem;
+  margin-top: 0.3rem;
 }
 
 button:hover,
