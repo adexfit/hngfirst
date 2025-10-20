@@ -95,6 +95,11 @@ p {
 .nav-links a:hover {
   color: #1dbf73;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
 
 .menu-icon {
   display: none;
@@ -110,6 +115,11 @@ p {
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
+  }
+
+  .mainCard {
+    width: 90%;
+    padding: 1em;
   }
 
   .nav-links {
